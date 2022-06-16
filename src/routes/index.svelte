@@ -34,11 +34,11 @@
 	</section>
 	<section class="h-screen" bind:this={education}>
 		<div
-			class="h-[95%] bg-[#ECE7C2] grid justify-items-center content-center px-[44px] gap-y-[1vh]"
+			class="h-[97%] bg-[#ECE7C2] grid justify-items-center content-center px-[44px] gap-y-[2vh]"
 		>
 			<h2 class="text-center">I mean I’m <span class="italic">qualified</span> for other stuff</h2>
 			<img src={nerd} alt="A nerd guy" class="w-[150px]" />
-			<div class="text-center grid gap-y-4">
+			<div class="text-center grid gap-y-1">
 				<div>
 					<h3 class="fancy">Bachelor of Commerce</h3>
 					<h3 class="">2009</h3>
@@ -55,7 +55,7 @@
 				<IoIosArrowDown />
 			</button>
 		</div>
-		<div class="h-[5%] bg-gradient-to-b from-[#ECE7C2] to-[#06010B]" />
+		<div class="h-[3%] bg-gradient-to-b from-[#ECE7C2] to-[#06010B]" />
 	</section>
 	<section class="h-screen" bind:this={coding}>
 		<div
