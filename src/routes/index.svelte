@@ -1,6 +1,6 @@
 <script lang="ts">
 	
-	let catPC = '/images/landing_cat.png';
+	let catPC = '/images/meow.gif';
 	let nerd = '/images/nerd.png';
 	let education: HTMLElement;
 	let coding: HTMLElement;
