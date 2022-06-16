@@ -63,14 +63,14 @@
 		
 		
 		<div
-			class="h-[50%] bg-gradient-to-b from-[#06010B] via-[#27014C] to-[#8701B0] grid justify-items-center content-center px-[44px] gap-y-[3vh]"
+			class="h-[50%] bg-gradient-to-b from-[#06010B] via-[#27014C] to-[#8701B0] grid justify-items-center content-center gap-y-[3vh]"
 		>
-		<h2 class="text-center text-white">But I'm <span class="italic">passionate</span> about code.</h2>
+		<h2 class="text-center px-[44px] text-white">But I'm <span class="italic">passionate</span> about code.</h2>
 
 		<Capsule/>
 	</div>
 		<div
-			class="h-[50%] bg-gradient-to-b from-[#8701B0] via-[#FF5AA4] to-[#030006] grid justify-items-center content-center px-[44px] gap-y-[3vh]"
+			class="h-[50%] bg-gradient-to-b from-[#8701B0] via-[#FF5AA4] to-[#030006] grid justify-items-center content-center gap-y-[3vh]"
 		>
 		
 	
