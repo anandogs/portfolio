@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: 'PerfectlyNineties';
-    src: url('fonts/PerfectlyNinetiesRegular.woff'), url('PerfectlyNinetiesRegular.woff2') format('woff');
+    src: url('/fonts/PerfectlyNinetiesRegular.woff') format('woff'), url('/fonts/PerfectlyNinetiesRegular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PerfectlyNineties';
-    src: url('fonts/PerfectlyNinetiesItalic.woff'), url('PerfectlyNinetiesItalic.woff2') format('woff');
+    src: url('fonts/PerfectlyNinetiesItalic.woff') format('woff'), url('/fonts/PerfectlyNinetiesItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
 }
