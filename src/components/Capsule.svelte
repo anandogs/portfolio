@@ -17,6 +17,9 @@
 
 	// moves the camera backwards - otherwise it is in the middle of the object
 	camera.position.setZ(30);
+	camera.position.setY(-5);
+	camera.position.setX(0);
+
 
 	renderer.render(scene, camera);
 
@@ -24,7 +27,8 @@
 	const material = new THREE.MeshStandardMaterial({
 		color: 0xeb3d5a,
 		roughness: 0,
-		metalness: 0.6
+		metalness: 0.6,
+		alphaTest: 0.5,
 	});
 	const capsule = new THREE.Mesh(geometry, material);
 	scene.add(capsule);

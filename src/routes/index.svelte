@@ -1,7 +1,8 @@
 <script lang="ts">
 	
-	let catPC = '/images/meow.gif';
+	let catPC = '/images/landing_cat.png';
 	let nerd = '/images/nerd.png';
+	let backgroundImage = '/images/grainy.svg';
 	let education: HTMLElement;
 	let coding: HTMLElement;
 	import Navbar from '../components/Navbar.svelte';
@@ -14,10 +15,8 @@
 
 <main>
 	<Navbar />
-	<section class="h-screen">
-		<div
-			class="h-[90%] pt-10 bg-[#030006] grid justify-items-center content-center px-[44px] gap-y-[3vh]"
-		>
+	<section class="h-screen bg-[#067195] grainy pt-10 grid justify-items-center content-center px-[44px] gap-y-[5vh]">
+
 			<h1 class="text-white">Hello, World.</h1>
 
 			<img src={catPC} alt="A cat in a PC" class="w-[178px]" />
@@ -30,14 +29,10 @@
 			>
 				<IoIosArrowDown />
 			</button>
-		</div>
-		<div class="h-[10%] bg-gradient-to-b from-[#030006] to-[#ECE7C2]" />
+
 	</section>
-	<section class="h-screen" bind:this={education}>
-		<div
-			class="h-[97%] bg-[#ECE7C2] grid justify-items-center content-center px-[44px] gap-y-[2vh]"
-		>
-			<h2 class="text-center">I' mean I’m' <span class="italic">qualified</span> for other stuff</h2>
+	<section class="h-screen bg-[#EBE8DF] grid justify-items-center content-center px-[44px] gap-y-[2vh] grainy" bind:this={education}>
+			<h2 class="text-center">I mean I’m <span class="italic">qualified</span> for other stuff</h2>
 			<img src={nerd} alt="A nerd guy" class="w-[150px]" />
 			<div class="text-center grid gap-y-1">
 				<div>
@@ -55,25 +50,20 @@
 			>
 				<IoIosArrowDown />
 			</button>
-		</div>
-		<div class="h-[3%] bg-gradient-to-b from-[#ECE7C2] to-[#06010B]" />
+		
 	</section>
-	<section class="h-screen" bind:this={coding}>
+	<section class="h-screen bg-[#1D1A19] " bind:this={coding}>
 		
-		
-		
-		<div
-			class="h-[50%] bg-gradient-to-b from-[#06010B] via-[#27014C] to-[#8701B0] grid justify-items-center content-center gap-y-[3vh]"
-		>
-		<h2 class="text-center px-[44px] text-white">But I'm <span class="italic">passionate</span> about code.</h2>
-
 		<Capsule/>
+		
+		<div class="h-[50%]">
+		<h2 class="text-center px-[44px] pt-[20%] text-white">But I'm <span class="italic">passionate</span> about code.</h2>
 	</div>
-		<div
-			class="h-[50%] bg-gradient-to-b from-[#8701B0] via-[#FF5AA4] to-[#030006] grid justify-items-center content-center gap-y-[3vh]"
-		>
+	<div class="h-[50%]">
+		<h2 class="text-center px-[44px] text-white">But I'm <span class="italic">passionate</span> about code.</h2>
+	</div>
 		
 	
-		</div>
+		
 	</section>
 </main>

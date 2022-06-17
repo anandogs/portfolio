@@ -47,3 +47,8 @@ h3 {
     font-family: var(--font-secondary);
     letter-spacing: 0.075rem;
 }
+
+.grainy {
+    background-image: url('/images/grainy.svg');
+    
+}
