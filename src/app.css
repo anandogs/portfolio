@@ -43,12 +43,30 @@ h3 {
     font-size: 1.5rem;
 }
 
+p {
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+}
+
+li {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+}
+
 .fancy {
     font-family: var(--font-secondary);
     letter-spacing: 0.075rem;
 }
 
-.grainy {
+.grainy-blue {
+    background:#0F5770;
     background-image: url('/images/grainy.svg');
-    
+    filter: blur(1px);
 }
+
+.grainy-brown {
+    background:#CA9A5F;
+    background-image: url('/images/grainy.svg');
+    filter: blur(1px);
+}
+

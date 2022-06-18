@@ -16,14 +16,14 @@
 	renderer.setSize(window.innerWidth, window.innerHeight);
 
 	// moves the camera backwards - otherwise it is in the middle of the object
-	camera.position.setZ(30);
-	camera.position.setY(-5);
+	camera.position.setZ(50);
+	camera.position.setY(-12);
 	camera.position.setX(0);
 
 
 	renderer.render(scene, camera);
 
-	const geometry = new THREE.CapsuleGeometry(1.5, 7, 8, 16);
+	const geometry = new THREE.CapsuleGeometry(1, 5  , 8, 16);
 	const material = new THREE.MeshStandardMaterial({
 		color: 0xeb3d5a,
 		roughness: 0,
@@ -33,6 +33,7 @@
 	const capsule = new THREE.Mesh(geometry, material);
 	scene.add(capsule);
 
+
 	const pointLight = new THREE.PointLight(0xffffff);
 	pointLight.position.set(5, 5, 5);
 	const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -40,7 +41,7 @@
 
 	function animate() {
 		requestAnimationFrame(animate);
-		capsule.rotation.x += 0.01;
+		capsule.rotation.x += 0.02;
 		capsule.rotation.y += 0.005;
 		capsule.rotation.z += 0.01;
 
