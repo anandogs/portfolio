@@ -21,16 +21,16 @@
 		showMenu ? 'h-[140px]' : 'h-[33px]'
 	} duration-500 ease-in-out ${isDark? 'border-white': 'border-[#1D1A19]'}  border-b border-l border-r z-10`}
 >
-	<div class="flex justify-between px-5">
+	<button class="flex justify-between px-5 cursor-pointer w-[100%]"  on:click={toggleShowMenu}>
 		<p class={isDark? 'text-white': 'text-[#1D1A19]'}>{heading}</p>
-		<button class={`${isDark?'text-white': 'text-[#1D1A19]'} w-[25px] cursor-pointer`} on:click={toggleShowMenu}>
+		<div class={`${isDark?'text-white': 'text-[#1D1A19]'} w-[25px]`}>
 			{#if showMenu}
 				<IoIosClose />
 			{:else}
 				<IoIosArrowDown />
 			{/if}
-		</button>
-	</div>
+        </div>
+	</button>
 	{#if showMenu}
 		<div transition:fly={{ y:-10, duration:500 }} class={`${isDark ? 'text-white': 'text-[#1D1A19]'} pt-2 grid gap-y-2`}>
 			<div class="flex justify-center menu ">{headingDetails.from}</div>
