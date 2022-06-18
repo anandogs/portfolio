@@ -48,7 +48,7 @@ p {
     font-size: 1.25rem;
 }
 
-li {
+.menu {
     font-family: var(--font-primary);
     font-size: 1rem;
 }
