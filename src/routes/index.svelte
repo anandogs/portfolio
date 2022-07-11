@@ -6,12 +6,8 @@
 	let education: HTMLElement;
 	let coding: HTMLElement;
 	import Navbar from '../components/Navbar.svelte';
-	import IoIosArrowDown from 'svelte-icons/io/IoIosArrowDown.svelte';
 	import Capsule from '../components/Capsule.svelte';
-	const scrollToLocation = (scrollLoc: HTMLElement) => {
-		scrollLoc.scrollIntoView({ behavior: 'smooth', block: 'end' });
-	};
-
+	
 </script>
 
 <main>
@@ -27,12 +23,6 @@
 		<h2 class="text-white text-center max-w-[278px]">
 			I’m Anando - I’m interested in computers, <span class="italic">mostly</span>.
 		</h2>
-		<button
-			class="text-white w-[25px] cursor-pointer animate-bounce pt-[3vh]"
-			on:click={() => scrollToLocation(education)}
-		>
-			<IoIosArrowDown />
-		</button>
 	</section>
 	<section
 		class="relative h-screen grid justify-items-center content-center px-[44px] gap-y-10"
@@ -45,12 +35,6 @@
 			<Menu isDark={false} heading='Bachelor of Commerce' headingDetails={{from: 'Mumbai University', studied: 'Commerce', details: 'Accounts, Ecomomics, Commerce'}}/>
 			<Menu isDark={false} heading='MBA' headingDetails={{from: 'Indian School of Business', studied: 'Post Graduate Program in Management', details: 'Finance, IT'}}/>
 		</div>
-		<button
-			class="text-black w-[25px] cursor-pointer animate-bounce"
-			on:click={() => scrollToLocation(coding)}
-		>
-			<IoIosArrowDown />
-		</button>
 	</section>
 	<section class="h-screen bg-[#1D1A19] grid content-center px-[44px]" bind:this={coding}>
 		
@@ -64,8 +48,6 @@
 			<Menu isDark={true} heading='Web Development' headingDetails={{from: 'HarvardX', studied: 'Web Programming', details: 'Python, Javascript'}}/>
 			<Menu isDark={true} heading='UI / UX' headingDetails={{from: 'CALARTS', studied: 'Web Strategy & Info Architecture', details: 'Elements of UI & UX'}}/>
 			<Menu isDark={true} heading='Machine Learning' headingDetails={{from: 'Stanford Online', studied: 'Machine Learning', details: 'Regression, Artifical Neural Nets'}}/>
-			
-				
 		</div>
 	</section>
 </main>
