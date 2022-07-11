@@ -13,17 +13,17 @@
 	});
     
 	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(window.innerWidth*.3, window.innerHeight*.3);
 
 	// moves the camera backwards - otherwise it is in the middle of the object
-	camera.position.setZ(50);
-	camera.position.setY(-12);
+	camera.position.setZ(10);
+	camera.position.setY(0);
 	camera.position.setX(0);
 
 
 	renderer.render(scene, camera);
 
-	const geometry = new THREE.CapsuleGeometry(1, 5  , 8, 16);
+	const geometry = new THREE.CapsuleGeometry(1, 5, 8, 16);
 	const material = new THREE.MeshStandardMaterial({
 		color: 0xeb3d5a,
 		roughness: 0,
@@ -51,6 +51,6 @@
 	animate();
 })
 </script>
-<div class="absolute">
-<canvas bind:this={canvasSelector} class="relative top-0" />
+<div class="flex justify-center">
+<canvas bind:this={canvasSelector} class="" />
 </div>

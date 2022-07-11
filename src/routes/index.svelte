@@ -52,14 +52,13 @@
 			<IoIosArrowDown />
 		</button>
 	</section>
-	<section class="h-screen bg-[#1D1A19] " bind:this={coding}>
-		<Capsule />
-
-		<div class="h-[45%]">
-			<h2 class="text-center px-[44px] pt-[20%] text-white">
+	<section class="h-screen bg-[#1D1A19] grid content-center" bind:this={coding}>
+		
+			<h2 class="text-center text-white">
 				But at 30, I took the <span class="italic">Red Pill</span>
 			</h2>
-		</div>
+			<Capsule />
+
 		<div class=" grid justify-items-center bg-[#1D1A19] gap-y-5">
 			<Menu isDark={true} heading='Computer Science' headingDetails={{from: 'HarvardX', studied: 'Introduction to Computer Science', details: 'Scratch, C, Python'}}/>
 			<Menu isDark={true} heading='Web Development' headingDetails={{from: 'HarvardX', studied: 'Web Programming', details: 'Python, Javascript'}}/>

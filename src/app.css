@@ -64,5 +64,5 @@ p {
 
 .grainy-brown {
     background-image: radial-gradient(ellipse, #0000, #0007), linear-gradient(0deg,rgba(219, 186, 88, 0.6), rgba(219, 186, 88, 0.6)),url('/images/grainy.svg');
-}
+range: infinite;}
 
