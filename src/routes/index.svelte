@@ -52,7 +52,7 @@
 			<IoIosArrowDown />
 		</button>
 	</section>
-	<section class="h-screen bg-[#1D1A19] grid content-center" bind:this={coding}>
+	<section class="h-screen bg-[#1D1A19] grid content-center px-[44px]" bind:this={coding}>
 		
 			<h2 class="text-center text-white">
 				But at 30, I took the <span class="italic">Red Pill</span>
