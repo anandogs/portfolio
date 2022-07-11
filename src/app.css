@@ -59,14 +59,10 @@ p {
 }
 
 .grainy-blue {
-    background:#0F5770;
-    background-image: url('/images/grainy.svg');
-    filter: blur(1px);
+    background-image: radial-gradient(ellipse, #0000, #0007), linear-gradient(0deg,rgba(20, 111, 142, 0.6), rgba(20, 111, 142, 0.6)),url('/images/grainy.svg');
 }
 
 .grainy-brown {
-    background:#CA9A5F;
-    background-image: url('/images/grainy.svg');
-    filter: blur(1px);
+    background-image: radial-gradient(ellipse, #0000, #0007), linear-gradient(0deg,rgba(219, 186, 88, 0.6), rgba(219, 186, 88, 0.6)),url('/images/grainy.svg');
 }
 
