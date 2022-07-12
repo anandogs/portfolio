@@ -108,7 +108,9 @@
 		<div class="flex gap-[15%]">
 			<img src={python} alt="Python Logo" width="100" height="100" />
 			<img src={js} alt="Javascript Logo" width="100" height="100" />
+			
 		</div>
+		<div class="w-[100%] border-b-2 border-dashed"></div>
 		<h2>My <span class="italic text-white">favourite</span> Frameworks and Libraries</h2>
 		<div class="grid gap-y-8">
 			<img src={pandas} alt="Pandas Logo" width="200" height="64.84" />
@@ -116,8 +118,11 @@
 			<img src={svelte_logo} alt="Svelte Logo" width="200" height="37.46" />
 			<img src={django} alt="Django Logo" width="200" height="69.63" />
 		</div>
+		<div class="w-[100%] border-b-2 border-dashed"></div>
+
 		<h2>Languages I'm <span class="text-white italic">geeking</span> over</h2>
 		<img src={rust} alt="Rust Logo" width="100" height="100" />
+		<div class="w-[100%] border-b-2 border-dashed"></div>
 
 	</section>
 	<!-- <section class="grainy-blue grid gap-y-11">
