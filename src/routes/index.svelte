@@ -103,7 +103,7 @@
 			/>
 		</div>
 	</section>
-	<section class="grainy-brown grid gap-y-11 justify-items-start py-14 px-11">
+	<section class="grainy-blue grid gap-y-11 justify-items-start py-14 px-11">
 		<h2 class="text-center">Languages I <span class="italic text-white">love</span></h2>
 		<div class="flex gap-[15%]">
 			<img src={python} alt="Python Logo" width="100" height="100" />
@@ -116,8 +116,12 @@
 			<img src={svelte_logo} alt="Svelte Logo" width="200" height="37.46" />
 			<img src={django} alt="Django Logo" width="200" height="69.63" />
 		</div>
-		<h2>Languages I'm nerding over</h2>
+		<h2>Languages I'm <span class="text-white italic">geeking</span> over</h2>
 		<img src={rust} alt="Rust Logo" width="100" height="100" />
 
 	</section>
+	<!-- <section class="grainy-blue grid gap-y-11">
+		<h2><span class="italic text-white">Play</span> Work</h2>
+
+	</section> -->
 </main>
