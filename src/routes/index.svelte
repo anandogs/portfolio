@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Menu from '../components/Menu.svelte';
 	
-	let catPC = '/images/landing_cat.png';
-	let nerd = '/images/nerd.png';
+	let catPC = '/images/landing_cat.webp';
+	let nerd = '/images/nerd.webp';
+	let python = '/images/python_bw.webp';
 	let education: HTMLElement;
 	let coding: HTMLElement;
 	import Navbar from '../components/Navbar.svelte';
@@ -19,7 +20,7 @@
 
 		<h1 class="text-white">Hello, World.</h1>
 
-		<img src={catPC} alt="A cat in a PC" class="w-[178px]" />
+		<img src={catPC} alt="A cat in a PC" class="w-[178px]" width="178" height="178"/>
 		<h2 class="text-white text-center max-w-[278px]">
 			I’m Anando - I’m interested in computers, <span class="italic">mostly</span>.
 		</h2>
@@ -30,7 +31,7 @@
 	>
 		<div class="grainy-brown absolute w-screen h-screen z-[-100]" />
 		<h2 class="text-center">I <span class="italic">thought</span> it was a passing interest</h2>
-		<img src={nerd} alt="A nerd guy" class="w-[150px]" />
+		<img src={nerd} alt="A nerd guy" width="150.31" height="297" class="w-[150px]" />
 		<div class="text-center grid gap-y-5 ">
 			<Menu isDark={false} heading='Bachelor of Commerce' headingDetails={{from: 'Mumbai University', studied: 'Commerce', details: 'Accounts, Ecomomics, Commerce'}}/>
 			<Menu isDark={false} heading='MBA' headingDetails={{from: 'Indian School of Business', studied: 'Post Graduate Program in Management', details: 'Finance, IT'}}/>
@@ -49,5 +50,14 @@
 			<Menu isDark={true} heading='UI / UX' headingDetails={{from: 'CALARTS', studied: 'Web Strategy & Info Architecture', details: 'Elements of UI & UX'}}/>
 			<Menu isDark={true} heading='Machine Learning' headingDetails={{from: 'Stanford Online', studied: 'Machine Learning', details: 'Regression, Artifical Neural Nets'}}/>
 		</div>
+	</section>
+	<section class="grainy-brown grid gap-y-11 justify-center">
+		
+			<h2 class="text-center">
+				Languages I love
+			</h2>
+			<img src={python} alt="Python Logo" width="100" height="100"/>
+
+		
 	</section>
 </main>
