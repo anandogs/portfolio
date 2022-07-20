@@ -1,17 +1,7 @@
 <script lang="ts">
 	import Menu from '../components/Menu.svelte';
-	import { fly } from 'svelte/transition';
 	let catPC = '/images/landing_cat.webp';
 	let nerd = '/images/nerd.webp';
-	let python = '/images/python_bw.webp';
-	let js = '/images/js_bw.webp';
-	let pandas = '/images/pandas_bw.webp';
-	let flutter = '/images/flutter_bw.webp';
-	let svelte_logo = '/images/svelte_bw.webp';
-	let django = '/images/django_bw.webp';
-	let rust = '/images/rust_bw.webp';
-	let education: HTMLElement;
-	let coding: HTMLElement;
 	import Navbar from '../components/Navbar.svelte';
 	import Capsule from '../components/Capsule.svelte';
 	import Skills from '../components/Skills.svelte';
@@ -21,7 +11,7 @@
 <main>
 	<Navbar />
 	<section
-		class="relative h-screen pt-10 grid justify-items-center content-center px-[44px] gap-y-[5vh]"
+		class="relative h-screen pt-10 grid justify-items-center content-center gap-y-[5vh]"
 	>
 		<div class="grainy-blue absolute w-screen h-screen z-[-100]" />
 
@@ -33,8 +23,7 @@
 		</h2>
 	</section>
 	<section
-		class="relative h-screen grid justify-items-center content-center px-[44px] gap-y-10"
-		bind:this={education}
+		class="relative h-screen grid justify-items-center content-center gap-y-10"
 	>
 		<div class="grainy-brown absolute w-screen h-screen z-[-100]" />
 		<h2 class="text-center">I <span class="italic">thought</span> it was a passing interest</h2>
@@ -60,7 +49,7 @@
 			/>
 		</div>
 	</section>
-	<section class="h-screen bg-[#1D1A19] grid content-center px-[44px]" bind:this={coding}>
+	<section class="h-screen bg-[#1D1A19] grid content-center">
 		<h2 class="text-center text-white">
 			But at 30, I took the <span class="italic">Red Pill</span>
 		</h2>
@@ -106,8 +95,5 @@
 		</div>
 	</section>
 	<Skills/>
-	<!-- <section class="grainy-blue grid gap-y-11">
-		<h2><span class="italic text-white">Play</span> Work</h2>
 
-	</section> -->
 </main>
