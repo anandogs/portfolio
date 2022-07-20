@@ -5,6 +5,7 @@
 	import Navbar from '../components/Navbar.svelte';
 	import Capsule from '../components/Capsule.svelte';
 	import Skills from '../components/Skills.svelte';
+	import Play from '../components/Play.svelte';
 
 </script>
 
@@ -95,5 +96,5 @@
 		</div>
 	</section>
 	<Skills/>
-
+	<Play />
 </main>

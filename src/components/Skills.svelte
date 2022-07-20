@@ -29,7 +29,7 @@
 	});
 </script>
 
-<section class="grainy-blue grid gap-y-8 justify-items-center justify-center py-14">
+<section class="grainy-blue grid gap-y-8 justify-items-center justify-center pt-14">
 	<h2 class="text-center">Languages I <span class="italic text-white">love</span></h2>
 	<div class:flyClass class="animated-image flex gap-[15%] justify-center opacity-0">
 		<img src={python} alt="Python Logo" width="50" height="50" />
