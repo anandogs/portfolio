@@ -8,14 +8,14 @@
 		image={'trees_of_harmony.webp'}
 		imageAlt={'8 bit Picture of a boy with trees'}
 		heading={'Trees of harmony'}
-		text={'My final project for CS50. A web based app with a database of trees on our farm. The farmer scans a QR code to register that the tree has been watered, the manager gets meta data on the tree (along with life time water usage) by scanning the QR code as well.'}
+		text={'A Django app with a postgresql database of trees on our farm (I stay on a farm!). The farmer scans a QR code to register tree watering and I get meta data on the tree (along with life time water usage) by scanning the QR code as well.'}
         link={'https://youtu.be/O0FCYh6lzWM'}
         />
     <Project
     image={'lilydodo.webp'}
     imageAlt={'8 bit Picture of a couple getting married'}
     heading={'dodolilywed.com'}
-    text={'I made this web app for RSVPs for our wedding functions. It’s got a Gatsby front end, connected to a Firebase database and hosted on Netlify. SMS notifications were people who were coming through the Twilio-Python package. Artwork done by me :)'}
+    text={'I made this web app for RSVPs for our wedding functions. It’s got a Gatsby front end, connected to a Firebase database and hosted on Netlify. SMS notifications were sent to people who were coming through the Twilio-Python package. Artwork done by me :)'}
     link={'https://www.dodolilywed.com'}
     />
     <Project
@@ -43,7 +43,7 @@
     image={'tictac.webp'}
     imageAlt={'8 bit Picture of a robot playing tic tac toe'}
     heading={'Tic Tac Toe (AI)'}
-    text={'A tic tac toe (knots and crosses) game built using PyGame and Python. If you beat the AI you winn 500 Rs! Recursion used to find optimal moves for the AI'}
+    text={'A tic tac toe (knots and crosses) game built using PyGame and Python. If you beat the AI you win 500 Rupees! Recursion used to find optimal moves for the AI'}
     link={'https://youtu.be/zbjyufE-aec'}
     />
 
