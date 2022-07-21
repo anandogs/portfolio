@@ -135,7 +135,6 @@ onMount(() => {
 		
 	</section>
 	<footer class="w-screen">
-		<p>Contact Me</p>
 		<img src={footer} alt='An astronaut lounging in a tropical resort in space, pixel art' class="w-screen"/>
 
 	</footer>
