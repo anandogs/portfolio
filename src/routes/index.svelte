@@ -2,6 +2,7 @@
 	import Menu from '../components/Menu.svelte';
 	let catPC = '/images/landing_cat.webp';
 	let nerd = '/images/nerd.webp';
+	let footer = '/images/footer_image.webp';
 	import Navbar from '../components/Navbar.svelte';
 	import Capsule from '../components/Capsule.svelte';
 	import Skills from '../components/Skills.svelte';
@@ -11,7 +12,6 @@ import { onMount } from 'svelte';
 	let isIntersecting:boolean = false;
 onMount(() => {
 	const chart = document.getElementById('myChartDiv');
-	console.log(chart)
 		let observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -120,12 +120,22 @@ onMount(() => {
 	</section>
 	<Skills/>
 	<Play />
-	<section class="bg-[#1D1A19] grid justify-items-center gap-y-7 py-7" >
+	<section class="bg-[#1D1A19] grid justify-items-center gap-y-7 py-7" id='work'>
 		<h2 id='myChartDiv'><span class="text-white italic">Work</span> Work</h2>
+		<p class="text-white">
+			I have been pretty much working since I graduated from college in 2009.<br><br>
+			I have a degree in Bcom and an MBA from a prestigious B-School in India.<br><br>
+			My work has been varied, but one thread that has been common since my first internship has been making presentations.. lots of them!<br><br>
+			Hover over the chart to get more details (or click on the bar if you're using a phone)
+		</p>
 
 		{#if isIntersecting}
 		<Chart/>
 		{/if}
 		
 	</section>
+	<footer class="w-screen">
+		<img src={footer} alt='An astronaut lounging in a tropical resort in space, pixel art' class="w-screen"/>
+
+	</footer>
 </main>

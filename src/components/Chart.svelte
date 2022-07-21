@@ -3,28 +3,24 @@
     import { Chart, registerables } from 'chart.js/dist/chart.esm';
 	Chart.register(...registerables);
 	let ctx: any;
-    let isIntersecting: boolean = true;
+    const workEx = ['\nCorporate MIS (2018 - Present: Part-time)\nFinance Partner (2019 - 2019: Full-time)\nFinancial Processes (2014-2018: Full-time)\n', '\nEcommerce Consultant (2018-2021:Part-time)\n', '\nEcommerce Executive (2011 - 2013)\nExecutive Assistant (2009-2011)\n']
 	onMount(async () => {
 		const myChart = new Chart(ctx, {
 			type: 'bar',
 			data: {
-				labels: ['Virtusa', 'Rangsutra', 'ISB', 'Fabindia', 'Mumbai Uni'],
+				labels: ['Virtusa', 'Rangsutra', 'Fabindia'],
 				datasets: [
 					{
 						label: 'Years',
 						data: [
 							[2014, 2022],
 							[2018, 2021],
-							[2013, 2014],
 							[2009, 2013],
-							[2006, 2009]
 						],
 						backgroundColor: [
 							'rgba(255, 134, 159, .4)',
 							'rgba(98,  182, 239, .4)',
-							'rgba(255, 218, 128, .4)',
 							'rgba(113, 205, 205, .4)',
-							'rgba(170, 128, 252, .4)'
 						],
 						borderWidth: 2
 					}
@@ -36,6 +32,16 @@
             duration: 3000,
         },
 				plugins: {
+                    tooltip:{
+                        callbacks: {
+                            afterTitle: function(context:any) {
+                                return workEx[context[0].dataIndex]
+                            },
+             
+
+                            
+                        }
+                    },
 					legend: {
 						display: false
 					}
