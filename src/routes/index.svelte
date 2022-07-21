@@ -50,7 +50,7 @@ onMount(() => {
 		class="relative h-screen grid justify-items-center content-center gap-y-10"
 	>
 		<div class="grainy-brown absolute w-screen h-screen z-[-100]" />
-		<h2 class="text-center">I <span class="italic">thought</span> it was a passing interest</h2>
+		<h2 class="text-center">I thought it was a passing interest</h2>
 		<img src={nerd} alt="A nerd guy" width="150.31" height="297" class="w-[150px]" />
 		<div class="text-center grid gap-y-5 ">
 			<Menu
@@ -75,7 +75,7 @@ onMount(() => {
 	</section>
 	<section class="h-screen bg-[#1D1A19] grid content-center">
 		<h2 class="text-center text-white">
-			But at 30, I took the <span class="italic">Red Pill</span>
+			But at 30, I took the Red Pill
 		</h2>
 		<Capsule />
 
@@ -135,6 +135,7 @@ onMount(() => {
 		
 	</section>
 	<footer class="w-screen">
+		<p>Contact Me</p>
 		<img src={footer} alt='An astronaut lounging in a tropical resort in space, pixel art' class="w-screen"/>
 
 	</footer>
