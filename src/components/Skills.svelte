@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	let python = '/images/python_bw.webp';
 	let js = '/images/js_bw.webp';

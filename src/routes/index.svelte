@@ -97,7 +97,7 @@
 	</section>
 	<Skills/>
 	<Play />
-	<section class="grainy-brown grid justify-items-center gap-y-5">
+	<section class="bg-[#1D1A19] grid justify-items-center gap-y-5">
 		<h2><span class="text-white italic">Work</span> Work</h2>
 		<Chart/>
 		

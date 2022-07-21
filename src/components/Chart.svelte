@@ -1,6 +1,28 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-    import Chart from 'chart.js/auto';
+	import {
+  Chart,
+  BarElement,
+  BarController,
+  CategoryScale,
+  LinearScale,
+  Legend,
+  Title,
+  Tooltip,
+  SubTitle
+} from 'chart.js';
+
+Chart.register(
+  BarElement,
+  BarController,
+  CategoryScale,
+  LinearScale,
+  Legend,
+  Title,
+  Tooltip,
+  SubTitle
+);
+
 
 	let ctx: any;
 	onMount(async () => {
@@ -18,7 +40,13 @@
 							[2009, 2013],
 							[2006, 2009]
 						],
-						backgroundColor: ['rgba(29, 26, 25,0.8)'],
+						backgroundColor: [
+							'rgba(255, 134, 159, .4)',
+							'rgba(98,  182, 239, .4)',
+							'rgba(255, 218, 128, .4)',
+							'rgba(113, 205, 205, .4)',
+							'rgba(170, 128, 252, .4)'
+						],
 						borderWidth: 2
 					}
 				]
@@ -30,14 +58,13 @@
 						display: false
 					}
 				},
-				barPercentage: 0.5,
+				barPercentage: 1,
 				responsive: true,
 				scales: {
 					x: {
-                        
 						ticks: {
-                            color: 'white',
-                            minRotation: 90
+							color: 'white',
+							minRotation: 90
 						}
 					},
 					y: {
@@ -45,8 +72,8 @@
 							display: false
 						},
 						ticks: {
-                            color: 'white',
-							callback: (value:number) => {
+							color: 'white',
+							callback: (value: number) => {
 								return value;
 							}
 						},
@@ -58,4 +85,5 @@
 		});
 	});
 </script>
-	<canvas id="myChart" width="200" height="400" bind:this={ctx} />
+
+<canvas id="myChart" width="200" height="400" bind:this={ctx} />
