@@ -7,6 +7,29 @@
 	import Skills from '../components/Skills.svelte';
 	import Play from '../components/Play.svelte';
 	import Chart from '../components/Chart.svelte';
+import { onMount } from 'svelte';
+	let isIntersecting:boolean = false;
+onMount(() => {
+	const chart = document.getElementById('myChartDiv');
+	console.log(chart)
+		let observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						isIntersecting = true;
+						return observer.unobserve(entry.target);
+					}
+				});
+			},
+			{ threshold: 1 }
+		);
+        if (chart) {
+            observer.observe(chart);
+        }
+}
+	
+)
+
 </script>
 
 <main>
@@ -97,9 +120,12 @@
 	</section>
 	<Skills/>
 	<Play />
-	<section class="bg-[#1D1A19] grid justify-items-center gap-y-7 py-7">
-		<h2><span class="text-white italic">Work</span> Work</h2>
+	<section class="bg-[#1D1A19] grid justify-items-center gap-y-7 py-7" >
+		<h2 id='myChartDiv'><span class="text-white italic">Work</span> Work</h2>
+
+		{#if isIntersecting}
 		<Chart/>
+		{/if}
 		
 	</section>
 </main>

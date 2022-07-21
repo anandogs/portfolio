@@ -1,12 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	
-    
     import { Chart, registerables } from 'chart.js/dist/chart.esm';
 	Chart.register(...registerables);
-
-
 	let ctx: any;
+    let isIntersecting: boolean = true;
 	onMount(async () => {
 		const myChart = new Chart(ctx, {
 			type: 'bar',
@@ -35,6 +32,9 @@
 			},
 
 			options: {
+                animation: {
+            duration: 3000,
+        },
 				plugins: {
 					legend: {
 						display: false
@@ -65,7 +65,8 @@
 				}
 			}
 		});
-	});
-</script>
 
+	});
+    
+</script>
 <canvas id="myChart" width="200" height="400" bind:this={ctx} />
