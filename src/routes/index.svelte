@@ -6,7 +6,7 @@
 	import Capsule from '../components/Capsule.svelte';
 	import Skills from '../components/Skills.svelte';
 	import Play from '../components/Play.svelte';
-
+	import Chart from '../components/Chart.svelte';
 </script>
 
 <main>
@@ -97,4 +97,9 @@
 	</section>
 	<Skills/>
 	<Play />
+	<section class="grainy-brown grid justify-items-center gap-y-5">
+		<h2><span class="text-white italic">Work</span> Work</h2>
+		<Chart/>
+		
+	</section>
 </main>
