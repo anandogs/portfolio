@@ -1,27 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import {
-  Chart,
-  BarElement,
-  BarController,
-  CategoryScale,
-  LinearScale,
-  Legend,
-  Title,
-  Tooltip,
-  SubTitle
-} from 'chart.js';
-
-Chart.register(
-  BarElement,
-  BarController,
-  CategoryScale,
-  LinearScale,
-  Legend,
-  Title,
-  Tooltip,
-  SubTitle
-);
+	
+    
+    import { Chart, registerables } from 'chart.js/dist/chart.esm';
+	Chart.register(...registerables);
 
 
 	let ctx: any;
