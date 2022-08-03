@@ -46,5 +46,13 @@
     text={'A tic tac toe (knots and crosses) game built using PyGame and Python. If you beat the AI you win 500 Rupees! Recursion used to find optimal moves for the AI'}
     link={'https://youtu.be/zbjyufE-aec'}
     />
+    <Project
+    image={'movies.webp'}
+    imageAlt={'a crab sitting in a movie hall eating pop corn and drinking soda watching a movie 8 bit'}
+    heading={'Movie Selection CLI App'}
+    text={'My first CLI app using Rust. This app helps friends choose which movie to watch by borrowing from the utility maximization principle. I also wrote the code in Python'}
+    link={'https://github.com/anandogs/movies_app'}
+    isLast={true}
+    />
 
 </section>
