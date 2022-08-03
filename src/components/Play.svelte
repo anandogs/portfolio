@@ -2,7 +2,7 @@
 	import Project from './Project.svelte';
 </script>
 
-<section class="grainy-blue grid gap-y-8 justify-items-center justify-center pt-14" id="play">
+<section class="grainy-blue grid gap-y-14 justify-items-center justify-center" id="play">
 	<h2><span class="text-white italic">Play</span> Work</h2>
 	<Project
 		image={'trees_of_harmony.webp'}

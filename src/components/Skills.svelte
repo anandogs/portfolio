@@ -28,10 +28,11 @@
 	});
 </script>
 
-<section class="grainy-blue grid gap-y-8 justify-items-center justify-center pt-14">
+<section class="grainy-blue grid gap-y-14 justify-items-center pt-14">
 	<h2 class="text-center">Languages I <span class="italic text-white">love</span></h2>
-	<div class:flyClass class="animated-image flex gap-[15%] justify-center opacity-0">
+	<div class:flyClass class="animated-image flex justify-evenly opacity-0 w-[100%]">
 		<img src={python} alt="Python Logo" width="50" height="50" />
+		<img src={rust} alt="Rust Logo" width="50" height="50" />
 		<img src={js} alt="Javascript Logo" width="50" height="50" />
 	</div>
 	<div class="w-[100%] border-b border-dashed" />
@@ -74,18 +75,8 @@
 			/>
 		</div>
 	</div>
-	<div class="w-[100%] border-b border-dashed" />
+	<div class="w-[100%]" />
 
-	<h3 class="text-white">Languages I'm geeking over</h3>
-	<img
-		class:flyClass
-		class="opacity-0 animated-image"
-		src={rust}
-		alt="Rust Logo"
-		width="72"
-		height="72"
-	/>
-	<div class="w-[100%] border-b border-dashed" />
 </section>
 
 <style>
