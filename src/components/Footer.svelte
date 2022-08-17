@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-full">
+	<div class="w-full flex justify-center">
 		<img
 			src={footer}
 			alt="An astronaut lounging in a tropical resort in space, pixel art"
