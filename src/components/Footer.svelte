@@ -86,6 +86,8 @@
 		<img
 			src={footer}
 			alt="An astronaut lounging in a tropical resort in space, pixel art"
+			width="1024px"
+			height="1024px"
 			class="w-full"
 		/>
 	</div>
