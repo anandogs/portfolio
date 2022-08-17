@@ -2,13 +2,13 @@
 	import Menu from '../components/Menu.svelte';
 	let catPC = '/images/landing_cat.webp';
 	let nerd = '/images/nerd.webp';
-	let footer = '/images/footer_image.webp';
 	import Navbar from '../components/Navbar.svelte';
 	import Capsule from '../components/Capsule.svelte';
 	import Skills from '../components/Skills.svelte';
 	import Play from '../components/Play.svelte';
 	import Chart from '../components/Chart.svelte';
 	import { onMount } from 'svelte';
+	import Footer from '../components/Footer.svelte';
 	let isIntersecting: boolean = false;
 	onMount(() => {
 		const chart = document.getElementById('myChartDiv');
@@ -151,7 +151,7 @@
 					<h3>Fabindia</h3>
 					<p class="italic font-bold">Functional Experience: Strategy, Technology</p>
 				</div>
-				<ul class="grid gap-y-3 pb-5 list-disc">
+				<ul class="grid gap-y-3 list-disc">
 					<li>
 						Corporate presentations, emails, and other communication from the Managing Directors
 						office
@@ -164,11 +164,6 @@
 			</div>
 		</div>
 	</section>
-	<footer class="w-screen">
-		<img
-			src={footer}
-			alt="An astronaut lounging in a tropical resort in space, pixel art"
-			class="w-screen"
-		/>
-	</footer>
+	<Footer/>
+
 </main>
