@@ -75,4 +75,4 @@
 	});
     
 </script>
-<canvas id="myChart" width="200" height="400" bind:this={ctx} />
+<canvas id="myChart" width="50" height="50" bind:this={ctx} />
