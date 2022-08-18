@@ -1,12 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	let python = '/images/python_bw.webp';
-	let js = '/images/js_bw.webp';
-	let pandas = '/images/pandas_bw.webp';
-	let flutter = '/images/flutter_bw.webp';
-	let svelte_logo = '/images/svelte_bw.webp';
-	let django = '/images/django_bw.webp';
-	let rust = '/images/rust_bw.webp';
 	let flyClass: any;
 
 	onMount(() => {
@@ -28,7 +21,7 @@
 	});
 </script>
 
-<section class="grainy-blue flex justify-center pt-14 ">
+<section class="grainy-blue flex justify-center pt-14 toggle-mode">
 	<div class="max-w-sm grid gap-y-14 ">
 		<h2 class="text-center py-12">Languages I <span class="italic text-white">love</span></h2>
 		<div class:flyClass class="animated-image flex justify-evenly opacity-0 w-[100%]">
