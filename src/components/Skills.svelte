@@ -21,7 +21,7 @@
 	});
 </script>
 
-<section class="grainy-blue flex justify-center pt-14 toggle-mode">
+<section class="grainy-blue flex justify-center pt-14 ">
 	<div class="max-w-sm grid gap-y-14 ">
 		<h2 class="text-center py-12">Languages I <span class="italic text-white">love</span></h2>
 		<div class:flyClass class="animated-image flex justify-evenly opacity-0 w-[100%]">

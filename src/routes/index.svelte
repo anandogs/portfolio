@@ -41,7 +41,7 @@
 			I’m Anando - I’m interested in computers, <span class="italic">mostly</span>.
 		</h2>
 	</section>
-	<section class="relative py-24 grid justify-items-center content-center gap-y-10 toggle-mode">
+	<section class="relative py-24 grid justify-items-center content-center gap-y-10">
 		<div class="grainy-brown absolute w-full h-full z-[-100]" />
 		<h2 class="text-center">I thought it was a passing interest</h2>
 		<img src={nerd} alt="A nerd guy" width="150.31" height="297" class="w-[150px]" />
@@ -66,7 +66,7 @@
 			/>
 		</div>
 	</section>
-	<section class="bg-[#1D1A19] py-24 grid content-center toggle-mode">
+	<section class="bg-[#1D1A19] py-24 grid content-center">
 		<h2 class="text-center text-white">But at 30, I took the Red Pill</h2>
 		<Capsule />
 
@@ -111,7 +111,7 @@
 	</section>
 	<Skills />
 	<Play />
-	<section class="toggle-mode bg-[#1D1A19] grid justify-items-center gap-y-7 py-7" id="work">
+	<section class="bg-[#1D1A19] grid justify-items-center gap-y-7 py-7" id="work">
 		<h2 id="myChartDiv" class="py-12"><span class="text-white italic">Work</span> Work</h2>
 
 		<div class="grid justify-items-center gap-y-7 md:grid-cols-2 md:gap-10 content-center">
