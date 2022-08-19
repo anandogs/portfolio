@@ -66,7 +66,7 @@
 			/>
 		</div>
 	</section>
-	<section class="bg-[#1D1A19] py-24 grid content-center">
+	<section class="bg-[#1D1A19] py-24 grid content-center min-h-screen toggle-dark">
 		<h2 class="text-center text-white">But at 30, I took the Red Pill</h2>
 		<Capsule />
 
@@ -111,7 +111,7 @@
 	</section>
 	<Skills />
 	<Play />
-	<section class="bg-[#1D1A19] grid justify-items-center gap-y-7 py-7" id="work">
+	<section class="bg-[#1D1A19] grid justify-items-center gap-y-7 py-7 toggle-dark" id="work">
 		<h2 id="myChartDiv" class="py-12"><span class="text-white italic">Work</span> Work</h2>
 
 		<div class="grid justify-items-center gap-y-7 md:grid-cols-2 md:gap-10 content-center">
