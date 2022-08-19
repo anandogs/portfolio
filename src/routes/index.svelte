@@ -10,6 +10,7 @@
 	import { onMount } from 'svelte';
 	import Footer from '../components/Footer.svelte';
 	let isIntersecting: boolean = false;
+	let pillIsIntersecting: boolean = false;
 	onMount(() => {
 		const chart = document.getElementById('myChartDiv');
 		let observer = new IntersectionObserver(
@@ -25,6 +26,21 @@
 		);
 		if (chart) {
 			observer.observe(chart);
+		}
+		const pill = document.getElementById('pill');
+		let pillObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						pillIsIntersecting = true;
+						return observer.unobserve(entry.target);
+					}
+				});
+			},
+			{ threshold: .1 }
+		);
+		if (pill) {
+			pillObserver.observe(pill);
 		}
 	});
 </script>
@@ -66,9 +82,11 @@
 			/>
 		</div>
 	</section>
-	<section class="bg-[#1D1A19] py-24 grid content-center min-h-screen toggle-dark">
-		<h2 class="text-center text-white">But at 30, I took the Red Pill</h2>
+	<section class="bg-[#1D1A19] py-24 grid content-center min-h-screen toggle-dark" id="pill">
+		<h2 class="text-center text-white" >But at 30, I took the Red Pill</h2>
+		{#if pillIsIntersecting}
 		<Capsule />
+		{/if}
 
 		<div class=" grid justify-items-center bg-[#1D1A19] gap-y-5">
 			<Menu
